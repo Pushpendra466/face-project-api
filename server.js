@@ -11,7 +11,8 @@ const image=require('./controllers/image');
 var db = require('knex')({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+        connectionString: process.env.postgresql-colorful-47019,
+        //ssl: true,
       user : 'postgres',
       password : 'tiger',
       database : 'smart_brain'
