@@ -11,11 +11,11 @@ const image=require('./controllers/image');
 var db = require('knex')({
     client: 'pg',
     connection: {
-        connectionString: process.env.postgresql-colorful-47019,
-        //ssl: true,
-      user : 'postgres',
-      password : 'tiger',
-      database : 'smart_brain'
+        connectionString: process.env.DATABASE_URL,
+        ssl: true,
+    //   user : 'postgres',
+    //   password : 'tiger',
+    //   database : 'smart_brain'
     }
   });
 // db.select('*').from('users').then(data=>{
